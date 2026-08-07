@@ -70,38 +70,24 @@ export default function CTASection() {
         </motion.div>
       </div>
 
-      {/* İstanbul Silüeti + Deniz Dalgaları + Martılar - Mobilde Gizli */}
-      <div className="w-full relative hidden md:flex flex-col justify-center items-center mt-8 min-h-[500px]">
+      {/* İstanbul Silüeti + Deniz Dalgaları + Martılar - TÜM CİHAZLARDA GÖRÜNSİN */}
+      <div className="w-full relative flex flex-col justify-end items-center mt-8 min-h-[300px] sm:min-h-[400px] md:min-h-[500px]">
         {/* Deniz Dalgaları Animasyonu (Arka Plan) */}
-        <div className="absolute bottom-0 left-0 right-0 z-0">
+        <div className="absolute bottom-0 left-0 right-0 z-0 h-full">
           <WaveAnimation />
         </div>
         
-        {/* İstanbul Skyline - SVG ile özel tasarım */}
-        <div className="relative z-10 w-full max-w-6xl px-4">
-          <IstanbulSkylineSVG />
+        {/* İstanbul Skyline - SVG ile özel tasarım - Denizin Üstünde Konumlandırıldı */}
+        <div className="relative z-10 w-full max-w-6xl px-2 sm:px-4 mb-0 flex items-end justify-center" style={{ marginBottom: '-2px' }}>
+          <div className="w-full" style={{ maxHeight: '280px' }}>
+            <IstanbulSkylineSVG />
+          </div>
         </div>
         
-        {/* Martılar - İstanbul Silüetinin Üstünde */}
-        <div className="absolute inset-0 z-20 pointer-events-none">
+        {/* Martılar - İstanbul Silüetinin Üstünde - Mobilde daha az göster */}
+        <div className="absolute inset-0 z-20 pointer-events-none hidden sm:block">
           <GullsAnimation />
         </div>
-      </div>
-      
-      {/* Mobil için basit dalga */}
-      <div className="w-full md:hidden mt-8 h-32">
-        <svg
-          className="w-full h-full"
-          viewBox="0 0 1440 200"
-          preserveAspectRatio="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill="#5b8bb3"
-            fillOpacity="0.8"
-            d="M0,96L48,106.7C96,117,192,139,288,138.7C384,139,480,117,576,112C672,107,768,117,864,128C960,139,1056,149,1152,144C1248,139,1344,117,1392,106.7L1440,96L1440,200L1392,200C1344,200,1248,200,1152,200C1056,200,960,200,864,200C768,200,672,200,576,200C480,200,384,200,288,200C192,200,96,200,48,200L0,200Z"
-          />
-        </svg>
       </div>
     </section>
   );

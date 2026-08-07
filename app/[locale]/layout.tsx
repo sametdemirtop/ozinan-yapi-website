@@ -54,21 +54,66 @@ export async function generateMetadata({
 
   const keywords: Record<Locale, string[]> = {
     tr: [
+      // Ana anahtar kelimeler
       'tesisatçı istanbul avrupa yakası',
+      'tesisat tamiri istanbul',
+      'acil tesisatçı istanbul',
+      'su kaçağı tespiti',
+      'su kaçağı bulma',
+      'gider açma',
+      'tıkanıklık giderme',
+      'banyo tamiri',
+      'mutfak tesisatı',
+      'kombi bakımı',
+      
+      // Esenler anahtar kelimeleri
       'esenler tesisatçı',
+      'esenler tesisat',
+      'esenler su kaçağı',
+      'esenler su kaçağı tespiti',
+      'esenler gider açma',
+      'esenler arıza tespiti',
+      'esenler acil tesisatçı',
+      'esenler banyo tamiri',
+      'esenler tıkanıklık açma',
+      
+      // Bayrampaşa anahtar kelimeleri
       'bayrampaşa tesisatçı',
-      'güngören tesisatçı',
+      'bayrampaşa tesisat',
+      'bayrampaşa su kaçağı',
+      'bayrampaşa su kaçağı tespiti',
+      'bayrampaşa gider açma',
+      'bayrampaşa arıza tespiti',
+      'bayrampaşa acil tesisatçı',
+      'bayrampaşa banyo tamiri',
+      'bayrampaşa tıkanıklık açma',
+      
+      // Bağcılar anahtar kelimeleri
       'bağcılar tesisatçı',
+      'bağcılar tesisat',
+      'bağcılar su kaçağı',
+      'bağcılar su kaçağı tespiti',
+      'bağcılar gider açma',
+      'bağcılar arıza tespiti',
+      'bağcılar acil tesisatçı',
+      'bağcılar banyo tamiri',
+      'bağcılar tıkanıklık açma',
+      
+      // Diğer bölgeler
+      'güngören tesisatçı',
+      'güngören tesisat',
+      'merter tesisatçı',
+      'merter tesisat',
+      'gaziosmanpaşa tesisatçı',
+      'gaziosmanpaşa tesisat',
       'başakşehir tesisatçı',
       'zeytinburnu tesisatçı',
       'bahçelievler tesisatçı',
-      'gider açma esenler',
-      'banyo tamiri avrupa yakası',
-      'kombi bakımı esenler',
-      'acil tesisatçı avrupa yakası',
-      'tesisat tamiri',
-      'su kaçağı',
-      'davut usta'
+      
+      // Marka ve kişi
+      'davut usta',
+      'özinan yapı',
+      'öz inan yapı malzemeleri'
     ],
     en: [
       'plumber istanbul european side',

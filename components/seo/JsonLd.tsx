@@ -139,6 +139,19 @@ export default function JsonLd() {
                 : 'خدمات السباكة الطارئة على مدار الساعة',
           },
         },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: locale === 'tr' ? 'Su Kaçağı Tespiti' : locale === 'en' ? 'Water Leak Detection' : 'كشف تسرب المياه',
+            description:
+              locale === 'tr'
+                ? 'Profesyonel su kaçağı bulma ve tespit hizmetleri'
+                : locale === 'en'
+                ? 'Professional water leak detection and location services'
+                : 'خدمات الكشف المهنية عن تسرب المياه',
+          },
+        },
       ],
     },
   };

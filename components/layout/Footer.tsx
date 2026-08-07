@@ -36,6 +36,7 @@ export default function Footer() {
               width={64}
               height={64}
               className="h-16 w-16 object-contain"
+              sizes="64px"
             />
             <p className="text-sm text-neutral-400">{t('tagline')}</p>
             <div className="flex gap-3 pt-2">

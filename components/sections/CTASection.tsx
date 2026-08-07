@@ -1,7 +1,6 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
 import IstanbulSkylineSVG from './IstanbulSkyline';
 
 export default function CTASection() {
@@ -10,42 +9,19 @@ export default function CTASection() {
   return (
     <section className="pt-20 bg-gradient-to-b from-[#dbeafe] via-[#e0f2fe] to-[#f0f9ff] relative overflow-hidden flex flex-col items-center">
       <div className="max-w-4xl mx-auto text-center space-y-8 relative z-20 px-4 sm:px-6 lg:px-8">
-        <motion.span
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="inline-block bg-white/80 backdrop-blur-sm text-primary font-bold px-6 py-2 rounded-full uppercase tracking-wider text-xs shadow-sm border border-primary/20"
-        >
+        <span className="inline-block bg-white/80 backdrop-blur-sm text-primary font-bold px-6 py-2 rounded-full uppercase tracking-wider text-xs shadow-sm border border-primary/20">
           {t('badge')}
-        </motion.span>
+        </span>
 
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight"
-        >
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary leading-tight">
           {t('title')}
-        </motion.h2>
+        </h2>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="text-xl md:text-2xl font-semibold text-primary border-b-2 border-primary inline-block pb-1"
-        >
+        <p className="text-xl md:text-2xl font-semibold text-primary border-b-2 border-primary inline-block pb-1">
           {t('subtitle')}
-        </motion.p>
+        </p>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-          className="mt-8 mb-16 flex flex-col sm:flex-row gap-4 items-center justify-center"
-        >
+        <div className="mt-8 mb-16 flex flex-col sm:flex-row gap-4 items-center justify-center">
           <a
             href="https://wa.me/905324533802?text=Merhaba,%20web%20sitenizden%20ulaşıyorum.%20Acil%20tesisat%20hizmeti%20almak%20istiyorum."
             target="_blank"
@@ -59,7 +35,7 @@ export default function CTASection() {
           </a>
           <a
             href={`tel:${t('phone').replace(/\s/g, '')}`}
-            className="inline-flex items-center gap-3 bg-primary text-white font-bold text-lg px-10 py-4 rounded-full hover:bg-primary-dark transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105"
+            className="inline-flex items-center gap-3 bg-primary text-white px-10 py-4 rounded-full hover:bg-primary-dark transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 font-bold text-lg"
             dir="ltr"
           >
             <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -67,27 +43,21 @@ export default function CTASection() {
             </svg>
             {t('phone')}
           </a>
-        </motion.div>
+        </div>
       </div>
 
-      {/* İstanbul Silüeti + Deniz Dalgaları + Martılar - YENİ YAKLASIM */}
       <div className="w-full relative mt-4 sm:mt-6 md:mt-8">
-        {/* Container */}
         <div className="w-full relative overflow-hidden h-[260px] sm:h-[320px] md:h-[420px] lg:h-[480px]">
-
-          {/* Deniz Dalgaları - Daha yüksek, silüetin yarısını kaplayacak */}
           <div className="absolute left-0 right-0 bottom-0 z-0 h-[180px] sm:h-[200px] md:h-[240px] lg:h-[280px]">
             <WaveAnimation />
           </div>
 
-          {/* İstanbul Silüeti - Dalgaların tepesinde oturuyor */}
           <div className="absolute left-0 right-0 bottom-[35px] sm:bottom-[50px] md:bottom-[84px] lg:bottom-[112px] z-10 flex justify-center px-2 sm:px-4">
             <div className="w-full max-w-6xl">
               <IstanbulSkylineSVG />
             </div>
           </div>
 
-          {/* Martılar */}
           <div className="absolute inset-0 z-20 pointer-events-none block">
             <GullsAnimation />
           </div>
@@ -97,7 +67,6 @@ export default function CTASection() {
   );
 }
 
-// Kuşlar Animasyonu Component'i - Gerçekçi Martılar
 function GullsAnimation() {
   const GullSVG = () => (
     <svg
@@ -107,27 +76,21 @@ function GullsAnimation() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      {/* Sol Kanat */}
       <path
         d="M100 80 Q60 60, 30 70 Q40 75, 60 72 Q80 70, 100 80"
         fill="#34495e"
         stroke="#2c3e50"
         strokeWidth="2"
       />
-      {/* Sağ Kanat */}
       <path
         d="M100 80 Q140 60, 170 70 Q160 75, 140 72 Q120 70, 100 80"
         fill="#34495e"
         stroke="#2c3e50"
         strokeWidth="2"
       />
-      {/* Gövde */}
       <ellipse cx="100" cy="90" rx="12" ry="18" fill="#7f8c8d" />
-      {/* Baş */}
       <circle cx="100" cy="75" r="10" fill="#95a5a6" />
-      {/* Gaga */}
       <path d="M100 75 L95 80 L100 82 Z" fill="#f39c12" />
-      {/* Göz */}
       <circle cx="102" cy="73" r="2" fill="#2c3e50" />
     </svg>
   );
@@ -143,7 +106,6 @@ function GullsAnimation() {
   );
 }
 
-// Deniz Dalgaları — CSS translate (path morphing framer hatası + LCP maliyeti yok)
 function WaveAnimation() {
   const wavePath =
     'M0,160L48,170.7C96,181,192,203,288,213.3C384,224,480,224,576,208C672,192,768,160,864,154.7C960,149,1056,171,1152,181.3C1248,192,1344,192,1392,192L1440,192L1440,400L1392,400C1344,400,1248,400,1152,400C1056,400,960,400,864,400C768,400,672,400,576,400C480,400,384,400,288,400C192,400,96,400,48,400L0,400Z';

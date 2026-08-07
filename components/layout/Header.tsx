@@ -33,6 +33,7 @@ export default function Header() {
               width={48}
               height={48}
               className="h-12 w-12 object-contain"
+              sizes="48px"
               priority
             />
             <span className="hidden sm:block text-lg md:text-xl font-semibold text-primary">

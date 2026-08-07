@@ -1,10 +1,8 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
+import { useTranslations, useLocale } from 'next-intl';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
-import { useLocale } from 'next-intl';
 import Image from 'next/image';
 
 const services = [
@@ -27,14 +25,7 @@ export default function Services() {
     >
       <div className="max-w-[1280px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center lg:items-start">
-          {/* Left: Content */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="space-y-6"
-          >
+          <div className="space-y-6">
             <h2 className="text-3xl md:text-4xl font-bold text-primary">
               {t('title')}
             </h2>
@@ -43,20 +34,13 @@ export default function Services() {
             </p>
 
             <ul className="space-y-4 pt-4">
-              {services.map((service, index) => (
-                <motion.li
-                  key={service}
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: index * 0.05 }}
-                  className="flex items-center gap-3"
-                >
+              {services.map((service) => (
+                <li key={service} className="flex items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-primary flex-shrink-0" />
                   <span className="text-base text-neutral-900">
                     {t(service)}
                   </span>
-                </motion.li>
+                </li>
               ))}
             </ul>
 
@@ -68,16 +52,9 @@ export default function Services() {
                 {t('viewAll')}
               </Link>
             </div>
-          </motion.div>
+          </div>
 
-          {/* Right: Plumber Image - Sadece Desktop'ta Görünür */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-            className="relative hidden lg:block"
-          >
+          <div className="relative hidden lg:block">
             <div className="rounded-2xl overflow-hidden shadow-xl border border-neutral-300 bg-gradient-to-br from-primary/5 to-secondary/5">
               <Image
                 src="/images/plumber-working.jpg"
@@ -85,11 +62,11 @@ export default function Services() {
                 width={800}
                 height={600}
                 className="w-full h-auto object-cover"
-                priority={false}
                 loading="lazy"
+                sizes="(max-width: 1024px) 0px, 50vw"
               />
             </div>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -198,6 +198,14 @@ export async function generateMetadata({
     verification: {
       google: 'your-google-verification-code', // User should replace with actual code
     },
+    manifest: '/manifest.json',
+    other: {
+      'theme-color': '#003764',
+      'color-scheme': 'light',
+      'mobile-web-app-capable': 'yes',
+      'apple-mobile-web-app-capable': 'yes',
+      'apple-mobile-web-app-status-bar-style': 'default',
+    },
   };
 }
 

@@ -1,0 +1,21 @@
+{
+  "name": "Öz İnan Yapı Malzemeleri",
+  "short_name": "Öz İnan Yapı",
+  "description": "Profesyonel tesisat ve yapı malzemeleri hizmetleri - İstanbul Avrupa Yakası",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#003764",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/ozinan-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "utilities"],
+  "lang": "tr",
+  "dir": "ltr"
+}

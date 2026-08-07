@@ -1,10 +1,22 @@
 import createMiddleware from 'next-intl/middleware';
-import { locales, defaultLocale } from './lib/i18n-config';
+import { NextRequest, NextResponse } from 'next/server';
 import { routing } from './i18n/routing';
 
-export default createMiddleware(routing);
+const intlMiddleware = createMiddleware(routing);
+
+export default function middleware(request: NextRequest) {
+  // SEO: kök URL her zaman varsayılan dile kalıcı gitsin.
+  // localeDetection açıkken Googlebot Accept-Language:en ile /en'e düşüyordu;
+  // site: sonuçlarında /tr görünmüyordu.
+  if (request.nextUrl.pathname === '/') {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${routing.defaultLocale}`;
+    return NextResponse.redirect(url, 308);
+  }
+
+  return intlMiddleware(request);
+}
 
 export const config = {
-  // Skip all paths that should not be internationalized
-  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)'],
 };

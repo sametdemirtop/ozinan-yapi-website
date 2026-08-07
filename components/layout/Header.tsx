@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { Link, usePathname } from '@/i18n/routing';
 import { useTranslations, useLocale } from 'next-intl';
 import { PhoneIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { localeNames, localeFlags, type Locale } from '@/lib/i18n-config';
+import { type Locale } from '@/lib/i18n-config';
 import Image from 'next/image';
 
 export default function Header() {
@@ -137,24 +137,63 @@ export default function Header() {
 }
 
 function LanguageSwitcher({ currentLocale }: { currentLocale: string }) {
+  const [isOpen, setIsOpen] = useState(false);
   const locales: Locale[] = ['tr', 'en', 'ar'];
   const pathname = usePathname();
 
+  const localeLabels: Record<Locale, string> = {
+    tr: 'TR',
+    en: 'EN',
+    ar: 'AR'
+  };
+
   return (
-    <div className="flex items-center gap-2">
-      {locales.map((loc) => (
-        <Link
-          key={loc}
-          href={pathname}
-          locale={loc}
-          className={`text-lg transition-opacity ${
-            currentLocale === loc ? 'opacity-100' : 'opacity-50 hover:opacity-75'
-          }`}
-          title={localeNames[loc]}
+    <div className="relative">
+      {/* Current Language Button */}
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center gap-2 px-4 py-2 bg-white border-2 border-primary text-primary rounded-lg hover:bg-primary/5 transition-colors font-semibold text-sm min-w-[70px] justify-center"
+      >
+        {localeLabels[currentLocale as Locale]}
+        <svg 
+          className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
         >
-          {localeFlags[loc]}
-        </Link>
-      ))}
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+        </svg>
+      </button>
+
+      {/* Dropdown Menu */}
+      {isOpen && (
+        <>
+          {/* Backdrop to close dropdown when clicking outside */}
+          <div 
+            className="fixed inset-0 z-40" 
+            onClick={() => setIsOpen(false)}
+          />
+          
+          {/* Dropdown Content */}
+          <div className="absolute top-full mt-2 right-0 bg-white border-2 border-neutral-200 rounded-lg shadow-xl overflow-hidden z-50 min-w-[70px]">
+            {locales.map((loc) => (
+              <Link
+                key={loc}
+                href={pathname}
+                locale={loc}
+                onClick={() => setIsOpen(false)}
+                className={`block px-4 py-2.5 text-sm font-semibold transition-colors text-center ${
+                  currentLocale === loc
+                    ? 'bg-primary text-white'
+                    : 'text-neutral-700 hover:bg-primary/5 hover:text-primary'
+                }`}
+              >
+                {localeLabels[loc]}
+              </Link>
+            ))}
+          </div>
+        </>
+      )}
     </div>
   );
 }

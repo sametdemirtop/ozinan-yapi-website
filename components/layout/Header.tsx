@@ -75,6 +75,7 @@ export default function Header() {
             <a
               href="tel:+905324533802"
               className="hidden md:flex items-center gap-2 bg-primary text-white px-5 py-2.5 rounded-lg hover:bg-primary-dark transition-colors font-medium text-sm"
+              dir="ltr"
             >
               <PhoneIcon className="w-5 h-5" />
               {t('callNow')}
@@ -122,6 +123,7 @@ export default function Header() {
               <a
                 href="tel:+905324533802"
                 className="flex items-center justify-center gap-2 bg-primary text-white px-5 py-3 rounded-lg hover:bg-primary-dark transition-colors font-medium"
+                dir="ltr"
               >
                 <PhoneIcon className="w-5 h-5" />
                 {t('callNow')}

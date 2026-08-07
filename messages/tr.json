@@ -1,7 +1,9 @@
 {
   "hero": {
     "title": "Profesyonel, Hızlı ve Güvenilir Tesisat Çözümleri",
-    "subtitle": "Evinizdeki her türlü tesisat ve yapı malzemesi ihtiyacınız için uzman kadromuzla yanınızdayız. Yılların tecrübesiyle, kaliteli malzemeleri usta işçilikle buluşturuyoruz."
+    "subtitle": "Evinizdeki her türlü tesisat ve yapı malzemesi ihtiyacınız için uzman kadromuzla yanınızdayız. Yılların tecrübesiyle, kaliteli malzemeleri usta işçilikle buluşturuyoruz.",
+    "ctaButton": "Hemen Teklif Al",
+    "servicesButton": "Hizmetlerimizi İncele"
   },
   "nav": {
     "home": "Ana Sayfa",

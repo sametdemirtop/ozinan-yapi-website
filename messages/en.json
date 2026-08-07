@@ -1,7 +1,9 @@
 {
   "hero": {
     "title": "Professional, Fast and Reliable Plumbing Solutions",
-    "subtitle": "We are here for all your plumbing and building materials needs with our expert team. We combine quality materials with master craftsmanship with years of experience."
+    "subtitle": "We are here for all your plumbing and building materials needs with our expert team. We combine quality materials with master craftsmanship with years of experience.",
+    "ctaButton": "Get Quote Now",
+    "servicesButton": "Explore Our Services"
   },
   "nav": {
     "home": "Home",

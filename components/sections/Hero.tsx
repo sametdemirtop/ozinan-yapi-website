@@ -31,13 +31,13 @@ export default function Hero() {
                 href={`/${locale}#contact`}
                 className="inline-flex items-center justify-center bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-colors font-medium text-base shadow-lg hover:shadow-xl"
               >
-                Hemen Teklif Al
+                {t('ctaButton')}
               </Link>
               <Link
                 href={`/${locale}#services`}
                 className="inline-flex items-center justify-center border-2 border-secondary text-secondary px-8 py-4 rounded-lg hover:bg-secondary hover:text-white transition-colors font-medium text-base"
               >
-                Hizmetlerimizi İncele
+                {t('servicesButton')}
               </Link>
             </div>
           </motion.div>

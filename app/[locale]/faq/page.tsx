@@ -59,6 +59,7 @@ export default function FAQPage() {
           <a 
             href="tel:+905324533802" 
             className="inline-flex items-center justify-center bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary-dark transition-colors font-medium"
+            dir="ltr"
           >
             {t('contactButton')}
           </a>

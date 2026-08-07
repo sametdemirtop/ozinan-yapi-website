@@ -54,19 +54,71 @@ export async function generateMetadata({
 
   const keywords: Record<Locale, string[]> = {
     tr: [
-      // Ana anahtar kelimeler
+      // ── Genel / Ana anahtar kelimeler ──
       'tesisatçı istanbul avrupa yakası',
+      'tesisatçı istanbul',
       'tesisat tamiri istanbul',
       'acil tesisatçı istanbul',
+      '7/24 tesisatçı',
+      'gece açık tesisatçı',
       'su kaçağı tespiti',
       'su kaçağı bulma',
+      'su kaçağı tespit cihazı',
       'gider açma',
       'tıkanıklık giderme',
+      'lavabo tıkanıklığı açma',
+      'klozet tıkanıklığı açma',
+      'kanalizasyon açma',
       'banyo tamiri',
       'mutfak tesisatı',
       'kombi bakımı',
-      
-      // Esenler anahtar kelimeleri
+      'kombi tamiri',
+      'kombi servisi',
+      'petek temizliği',
+      'batarya tamiri',
+      'sifon tamiri',
+      'su tesisatı döşeme',
+      'pis su tesisatı',
+      'temiz su tesisatı',
+      'sıcak su tesisatı',
+      'doğalgaz tesisatı',
+      'kalorifer tesisatı',
+      'yerden ısıtma tesisatı',
+
+      // ── Tadilat / tamirat (genel yelpaze) ──
+      'tadilat firması',
+      'ev tadilatı',
+      'daire tadilatı',
+      'komple tadilat',
+      'anahtar teslim tadilat',
+      'banyo tadilatı',
+      'mutfak tadilatı',
+      'boya badana',
+      'iç cephe boya',
+      'dış cephe boya',
+      'fayans ustası',
+      'seramik döşeme',
+      'parke döşeme',
+      'laminat parke',
+      'alçıpan ustası',
+      'asma tavan',
+      'elektrik tesisatı',
+      'elektrikçi',
+      'sigorta arızası',
+      'priz tamiri',
+      'çatı tamiri',
+      'çatı aktarma',
+      'su yalıtımı',
+      'izolasyon uygulaması',
+      'kombi montajı',
+      'petek montajı',
+      'kapı pencere montajı',
+      'pvc pencere tamiri',
+      'genel bakım onarım',
+      'yapı malzemeleri satış',
+      'inşaat malzemeleri',
+
+      // ── Esenler (ana bölge) ──
       'esenler tesisatçı',
       'esenler tesisat',
       'esenler su kaçağı',
@@ -76,8 +128,13 @@ export async function generateMetadata({
       'esenler acil tesisatçı',
       'esenler banyo tamiri',
       'esenler tıkanıklık açma',
-      
-      // Bayrampaşa anahtar kelimeleri
+      'esenler tadilat',
+      'esenler boya badana',
+      'esenler elektrikçi',
+      'esenler kombi servisi',
+      'esenler yapı malzemeleri',
+
+      // ── Bayrampaşa ──
       'bayrampaşa tesisatçı',
       'bayrampaşa tesisat',
       'bayrampaşa su kaçağı',
@@ -87,8 +144,10 @@ export async function generateMetadata({
       'bayrampaşa acil tesisatçı',
       'bayrampaşa banyo tamiri',
       'bayrampaşa tıkanıklık açma',
-      
-      // Bağcılar anahtar kelimeleri
+      'bayrampaşa tadilat',
+      'bayrampaşa kombi servisi',
+
+      // ── Bağcılar ──
       'bağcılar tesisatçı',
       'bağcılar tesisat',
       'bağcılar su kaçağı',
@@ -98,47 +157,133 @@ export async function generateMetadata({
       'bağcılar acil tesisatçı',
       'bağcılar banyo tamiri',
       'bağcılar tıkanıklık açma',
-      
-      // Diğer bölgeler
+      'bağcılar tadilat',
+      'bağcılar kombi servisi',
+
+      // ── Güngören ──
       'güngören tesisatçı',
       'güngören tesisat',
+      'güngören su kaçağı',
+      'güngören gider açma',
+      'güngören acil tesisatçı',
+      'güngören tadilat',
+
+      // ── Merter ──
       'merter tesisatçı',
       'merter tesisat',
+      'merter su kaçağı',
+      'merter gider açma',
+      'merter tadilat',
+
+      // ── Gaziosmanpaşa ──
       'gaziosmanpaşa tesisatçı',
       'gaziosmanpaşa tesisat',
+      'gaziosmanpaşa su kaçağı',
+      'gaziosmanpaşa gider açma',
+      'gaziosmanpaşa tadilat',
+
+      // ── Başakşehir ──
       'başakşehir tesisatçı',
+      'başakşehir tesisat',
+      'başakşehir su kaçağı',
+      'başakşehir tadilat',
+
+      // ── Zeytinburnu ──
       'zeytinburnu tesisatçı',
+      'zeytinburnu tesisat',
+      'zeytinburnu su kaçağı',
+      'zeytinburnu tadilat',
+
+      // ── Bahçelievler ──
       'bahçelievler tesisatçı',
-      
-      // Marka ve kişi
+      'bahçelievler tesisat',
+      'bahçelievler su kaçağı',
+      'bahçelievler tadilat',
+
+      // ── Sultangazi ──
+      'sultangazi tesisatçı',
+      'sultangazi su kaçağı',
+      'sultangazi tadilat',
+
+      // ── Küçükçekmece ──
+      'küçükçekmece tesisatçı',
+      'küçükçekmece su kaçağı',
+      'küçükçekmece tadilat',
+
+      // ── Marka ve kişi ──
       'davut usta',
       'özinan yapı',
-      'öz inan yapı malzemeleri'
+      'öz inan yapı malzemeleri',
+      'davut usta tesisat',
     ],
     en: [
       'plumber istanbul european side',
+      'plumber istanbul',
+      'emergency plumber istanbul',
+      '24/7 plumber istanbul',
+      'plumbing repair istanbul',
+      'water leak detection istanbul',
+      'drain cleaning istanbul',
+      'blocked drain repair',
+      'bathroom repair european side',
+      'kitchen plumbing repair',
+      'boiler maintenance istanbul',
+      'boiler repair istanbul',
+      'central heating repair',
+      'renovation contractor istanbul',
+      'home renovation istanbul',
+      'apartment renovation istanbul',
+      'painting and decorating istanbul',
+      'tiling contractor istanbul',
+      'electrician istanbul',
+      'building materials istanbul',
+
       'esenler plumber',
+      'esenler emergency plumber',
+      'esenler renovation',
       'bayrampaşa plumber',
+      'bayrampaşa renovation',
       'güngören plumber',
       'bağcılar plumber',
-      'drain cleaning esenler',
-      'bathroom repair european side',
-      'boiler maintenance',
-      'emergency plumber istanbul',
-      'plumbing repair',
-      'water leak',
-      'master davut'
+      'bağcılar renovation',
+      'merter plumber',
+      'gaziosmanpaşa plumber',
+      'başakşehir plumber',
+      'zeytinburnu plumber',
+      'bahçelievler plumber',
+
+      'master davut',
+      'oz inan yapi malzemeleri',
     ],
     ar: [
       'سباك إسطنبول الجانب الأوروبي',
+      'سباك إسطنبول',
+      'سباك طوارئ إسطنبول',
+      'سباك متاح 24 ساعة',
+      'إصلاح تسرب المياه',
+      'كشف تسرب المياه',
+      'تنظيف المجاري',
+      'فتح انسداد المجاري',
+      'إصلاح الحمام',
+      'تصليح مطبخ',
+      'صيانة الغلاية',
+      'إصلاح الغلاية',
+      'شركة تجديد وترميم',
+      'تجديد شقق إسطنبول',
+      'دهان وديكور',
+      'تركيب سيراميك وبلاط',
+      'كهربائي إسطنبول',
+      'مواد بناء إسطنبول',
+
       'سباك إيسينلر',
       'سباك بيرامباشا',
-      'تنظيف المجاري',
-      'إصلاح الحمام',
-      'صيانة الغلاية',
-      'سباك طوارئ',
-      'إصلاح السباكة',
-      'تسرب المياه'
+      'سباك باغجلار',
+      'سباك غونغورن',
+      'تجديد إيسينلر',
+      'تجديد بيرامباشا',
+
+      'الأسطى داوود',
+      'أوز إينان يابي',
     ],
   };
 

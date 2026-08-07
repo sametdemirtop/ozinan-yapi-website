@@ -1,0 +1,117 @@
+'use client';
+
+import { useState } from 'react';
+import { useTranslations } from 'next-intl';
+import { motion, AnimatePresence } from 'framer-motion';
+import { StarIcon, ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
+
+const testimonialKeys = ['review1', 'review2', 'review3', 'review4', 'review5', 'review6'];
+
+export default function Testimonials() {
+  const t = useTranslations('testimonials');
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextTestimonial = () => {
+    setCurrentIndex((prev) => (prev + 1) % testimonialKeys.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentIndex((prev) => (prev - 1 + testimonialKeys.length) % testimonialKeys.length);
+  };
+
+  const currentReview = testimonialKeys[currentIndex];
+
+  return (
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="max-w-4xl mx-auto text-center space-y-12">
+        <motion.h2
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-3xl md:text-4xl font-bold text-primary mb-12"
+        >
+          {t('title')}
+        </motion.h2>
+
+        <div className="relative">
+          {/* Navigation Arrows */}
+          <button
+            onClick={prevTestimonial}
+            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-20 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all hover:bg-primary hover:text-white text-primary border-2 border-primary"
+            aria-label="Previous testimonial"
+          >
+            <ChevronLeftIcon className="w-6 h-6" />
+          </button>
+
+          <button
+            onClick={nextTestimonial}
+            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-20 bg-white rounded-full p-3 shadow-lg hover:shadow-xl transition-all hover:bg-primary hover:text-white text-primary border-2 border-primary"
+            aria-label="Next testimonial"
+          >
+            <ChevronRightIcon className="w-6 h-6" />
+          </button>
+
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={currentIndex}
+              initial={{ opacity: 0, x: 100 }}
+              animate={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -100 }}
+              transition={{ duration: 0.3 }}
+              className="relative bg-white p-8 md:p-12 rounded-2xl border border-neutral-200 shadow-lg"
+            >
+              {/* Quote Icon */}
+              <svg
+                className="absolute top-6 left-6 w-12 h-12 text-primary/20"
+                fill="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+              </svg>
+
+              <div className="relative z-10">
+                {/* Review Text */}
+                <p className="text-lg md:text-xl text-neutral-800 italic leading-relaxed mb-8">
+                  "{t(`${currentReview}.text`)}"
+                </p>
+
+                {/* Stars */}
+                <div className="flex items-center justify-center gap-1 mb-4">
+                  {[...Array(5)].map((_, i) => (
+                    <StarIcon key={i} className="w-5 h-5 text-warning" />
+                  ))}
+                </div>
+
+                {/* Reviewer Name & Initial */}
+                <div className="flex items-center justify-center gap-3">
+                  <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold text-lg">
+                    {t(`${currentReview}.initial`)}
+                  </div>
+                  <p className="font-bold text-neutral-900 text-base">
+                    {t(`${currentReview}.name`)}
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+
+          {/* Dots Indicator */}
+          <div className="flex items-center justify-center gap-2 mt-8">
+            {testimonialKeys.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentIndex(index)}
+                className={`w-2 h-2 rounded-full transition-all ${
+                  index === currentIndex
+                    ? 'bg-primary w-8'
+                    : 'bg-neutral-300 hover:bg-neutral-400'
+                }`}
+                aria-label={`Go to testimonial ${index + 1}`}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

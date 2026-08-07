@@ -1,11 +1,13 @@
+import dynamic from 'next/dynamic';
 import Hero from '@/components/sections/Hero';
 import IntroSection from '@/components/sections/IntroSection';
 import Features from '@/components/sections/Features';
 import Services from '@/components/sections/Services';
-import ServiceAreas from '@/components/sections/ServiceAreas';
-import CTASection from '@/components/sections/CTASection';
-import Testimonials from '@/components/sections/Testimonials';
-import ContactForm from '@/components/forms/ContactForm';
+
+const ServiceAreas = dynamic(() => import('@/components/sections/ServiceAreas'));
+const CTASection = dynamic(() => import('@/components/sections/CTASection'));
+const Testimonials = dynamic(() => import('@/components/sections/Testimonials'));
+const ContactForm = dynamic(() => import('@/components/forms/ContactForm'));
 
 export default function HomePage() {
   return (

@@ -44,7 +44,7 @@ export default function Footer() {
                 href="https://wa.me/905324533802?text=Merhaba,%20web%20sitenizden%20ulaşıyorum.%20Tesisat%20hizmeti%20almak%20istiyorum."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-[#25D366] hover:bg-[#128C7E] rounded-full flex items-center justify-center text-white transition-all shadow-md hover:shadow-lg"
+                className="w-10 h-10 bg-[#0F766E] hover:bg-[#075E54] rounded-full flex items-center justify-center text-white transition-all shadow-md hover:shadow-lg"
                 aria-label="WhatsApp"
               >
                 <svg
@@ -88,9 +88,9 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="space-y-4">
-            <h4 className="font-bold text-white uppercase tracking-wider text-sm">
+            <h2 className="font-bold text-white uppercase tracking-wider text-sm">
               {t('contact')}
-            </h4>
+            </h2>
             <ul className="space-y-3 text-sm">
               <li className="flex items-center gap-2">
                 <PhoneIcon className="w-5 h-5 text-neutral-500 flex-shrink-0" />
@@ -123,9 +123,9 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h4 className="font-bold text-white uppercase tracking-wider text-sm">
+            <h2 className="font-bold text-white uppercase tracking-wider text-sm">
               {t('quickLinks')}
-            </h4>
+            </h2>
             <ul className="space-y-2 text-sm">
               {quickLinks.map((link) => (
                 <li key={link.name}>
@@ -142,9 +142,9 @@ export default function Footer() {
 
           {/* Legal */}
           <div className="space-y-4">
-            <h4 className="font-bold text-white uppercase tracking-wider text-sm">
+            <h2 className="font-bold text-white uppercase tracking-wider text-sm">
               {t('legal')}
-            </h4>
+            </h2>
             <ul className="space-y-2 text-sm">
               {legalLinks.map((link) => (
                 <li key={link.name}>
@@ -164,7 +164,7 @@ export default function Footer() {
       {/* Copyright */}
       <div className="border-t border-neutral-800">
         <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <p className="text-center text-sm text-neutral-500">{t('copyright')}</p>
+          <p className="text-center text-sm text-neutral-400">{t('copyright')}</p>
         </div>
       </div>
     </footer>

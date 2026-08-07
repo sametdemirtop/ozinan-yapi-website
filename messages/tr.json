@@ -12,7 +12,9 @@
     "areas": "Bölgeler",
     "contact": "İletişim",
     "callNow": "Hemen Ara",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "openMenu": "Menüyü aç",
+    "closeMenu": "Menüyü kapat"
   },
   "features": {
     "title": "Neden Öz İnan Yapı Malzemeleri?",

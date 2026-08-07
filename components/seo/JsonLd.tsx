@@ -1,12 +1,10 @@
-import { useLocale } from 'next-intl';
+import { SITE_URL } from '@/lib/site';
 
-export default function JsonLd() {
-  const locale = useLocale();
-
+export default function JsonLd({ locale }: { locale: string }) {
   const organizationSchema = {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': 'https://ozinanyapi.com.tr/#organization',
+    '@id': `${SITE_URL}/#organization`,
     name: 'Öz İnan Yapı Malzemeleri',
     alternateName: 'Özinan Yapı',
     description:
@@ -15,9 +13,9 @@ export default function JsonLd() {
         : locale === 'en'
         ? 'Professional plumbing services based in Esenler, Istanbul European Side with 30 years of experience. Serving Bayrampaşa, Güngören, Bağcılar, Başakşehir, Zeytinburnu districts.'
         : 'خدمات السباكة المهنية في الجانب الأوروبي من إسطنبول، إيسينلر مع 30 عاماً من الخبرة. نخدم مناطق بيرامباشا، غونغورين، باغجيلار، باشاك شهير، زيتون بورنو.',
-    url: 'https://ozinanyapi.com.tr',
-    logo: 'https://ozinanyapi.com.tr/logo.png',
-    image: 'https://ozinanyapi.com.tr/images/og-image.jpg',
+    url: SITE_URL,
+    logo: `${SITE_URL}/images/ozinan-logo.png`,
+    image: `${SITE_URL}/images/og-image.jpg`,
     telephone: '+905324533802',
     email: 'demirtopdavut@gmail.com',
     priceRange: '$$',
@@ -164,7 +162,7 @@ export default function JsonLd() {
         '@type': 'ListItem',
         position: 1,
         name: locale === 'tr' ? 'Ana Sayfa' : locale === 'en' ? 'Home' : 'الصفحة الرئيسية',
-        item: `https://ozinanyapi.com.tr/${locale}`,
+        item: `${SITE_URL}/${locale}`,
       },
     ],
   };

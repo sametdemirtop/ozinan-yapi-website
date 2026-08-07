@@ -24,7 +24,7 @@
   --color-neutral-900: #191c1d;
   
   /* Accent Colors */
-  --color-whatsapp: #25D366;
+  --color-whatsapp: #0F766E;
   --color-success: #10B981;
   --color-warning: #fec654;
   
@@ -85,6 +85,18 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading), var(--font-body), Georgia, serif;
+}
+
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3 {
+  font-family: var(--font-arabic), var(--font-body), sans-serif;
 }
 
 /* RTL Support */
@@ -223,4 +235,52 @@ body {
   top: 38%;
   animation: fly-gull-reverse 28s linear infinite;
   animation-delay: 2s;
+}
+
+/* Hero secondary content — does not affect LCP (H1 stays visible immediately) */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.45s ease-out both;
+}
+
+.animate-fade-up-delay {
+  animation: fade-up 0.45s ease-out 0.12s both;
+}
+
+/* CTA wave drift — avoid morphing SVG path `d` (causes console errors + main-thread cost) */
+@keyframes wave-drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.wave-layer {
+  animation: wave-drift linear infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay,
+  .wave-layer,
+  .gull-1,
+  .gull-2,
+  .gull-3,
+  .gull-4,
+  .gull-5 {
+    animation: none !important;
+  }
 }

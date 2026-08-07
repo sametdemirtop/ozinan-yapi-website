@@ -1,7 +1,8 @@
 import { MetadataRoute } from 'next';
+import { SITE_URL } from '@/lib/site';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://ozinanyapi.com.tr';
+  const baseUrl = SITE_URL;
   const locales = ['tr', 'en', 'ar'];
   
   // Ana sayfalar için sitemap entries

@@ -11,7 +11,9 @@
     "services": "Services",
     "areas": "Service Areas",
     "contact": "Contact",
-    "callNow": "Call Now"
+    "callNow": "Call Now",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "features": {
     "title": "Why Choose Öz İnan Yapı Malzemeleri?",

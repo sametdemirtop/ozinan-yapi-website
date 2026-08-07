@@ -95,19 +95,25 @@ export default function Testimonials() {
             </motion.div>
           </AnimatePresence>
 
-          {/* Dots Indicator */}
-          <div className="flex items-center justify-center gap-2 mt-8">
+          {/* Dots Indicator — min 44×44 touch targets */}
+          <div className="flex items-center justify-center gap-1 mt-8">
             {testimonialKeys.map((_, index) => (
               <button
                 key={index}
+                type="button"
                 onClick={() => setCurrentIndex(index)}
-                className={`w-2 h-2 rounded-full transition-all ${
-                  index === currentIndex
-                    ? 'bg-primary w-8'
-                    : 'bg-neutral-300 hover:bg-neutral-400'
-                }`}
+                className="flex items-center justify-center min-w-11 min-h-11 rounded-full"
                 aria-label={`Go to testimonial ${index + 1}`}
-              />
+                aria-current={index === currentIndex ? 'true' : undefined}
+              >
+                <span
+                  className={`rounded-full transition-all ${
+                    index === currentIndex
+                      ? 'bg-primary w-8 h-2.5'
+                      : 'bg-neutral-400 w-2.5 h-2.5 hover:bg-neutral-500'
+                  }`}
+                />
+              </button>
             ))}
           </div>
         </div>

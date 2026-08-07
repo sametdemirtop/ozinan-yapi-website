@@ -3,16 +3,18 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Libre_Caslon_Text, Hanken_Grotesk, Tajawal } from 'next/font/google';
 import { locales, isRTL, type Locale } from '@/lib/i18n-config';
+import { SITE_URL } from '@/lib/site';
 import JsonLd from '@/components/seo/JsonLd';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import '../globals.css';
 
 const libreCaslon = Libre_Caslon_Text({
-  weight: ['400', '700'],
+  weight: ['700'],
   subsets: ['latin'],
   variable: '--font-libre-caslon',
   display: 'swap',
+  preload: true,
 });
 
 const hankenGrotesk = Hanken_Grotesk({
@@ -20,6 +22,7 @@ const hankenGrotesk = Hanken_Grotesk({
   subsets: ['latin'],
   variable: '--font-hanken-grotesk',
   display: 'swap',
+  preload: true,
 });
 
 const tajawal = Tajawal({
@@ -27,6 +30,7 @@ const tajawal = Tajawal({
   subsets: ['arabic'],
   variable: '--font-tajawal',
   display: 'swap',
+  preload: false,
 });
 
 export function generateStaticParams() {
@@ -287,9 +291,10 @@ export async function generateMetadata({
     ],
   };
 
-  const siteUrl = 'https://ozinanyapi.com.tr';
+  const siteUrl = SITE_URL;
 
   return {
+    metadataBase: new URL(SITE_URL),
     title: {
       default: titles[locale as Locale] || titles.tr,
       template: '%s | Öz İnan Yapı'
@@ -327,6 +332,7 @@ export async function generateMetadata({
         tr: `${siteUrl}/tr`,
         en: `${siteUrl}/en`,
         ar: `${siteUrl}/ar`,
+        'x-default': `${siteUrl}/tr`,
       },
     },
     robots: {
@@ -370,16 +376,19 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   const direction = isRTL(locale as Locale) ? 'rtl' : 'ltr';
-  const fontClass = locale === 'ar' ? tajawal.variable : hankenGrotesk.variable;
+  const fontClassName =
+    locale === 'ar'
+      ? `${tajawal.variable} ${hankenGrotesk.variable}`
+      : `${libreCaslon.variable} ${hankenGrotesk.variable}`;
 
   return (
     <html
       lang={locale}
       dir={direction}
-      className={`${libreCaslon.variable} ${hankenGrotesk.variable} ${tajawal.variable} ${fontClass} antialiased`}
+      className={`${fontClassName} antialiased`}
     >
       <head>
-        <JsonLd />
+        <JsonLd locale={locale} />
       </head>
       <body className="min-h-screen flex flex-col bg-neutral-50">
         <NextIntlClientProvider messages={messages}>

@@ -1,0 +1,228 @@
+{
+  "hero": {
+    "title": "Profesyonel, Hızlı ve Güvenilir Tesisat Çözümleri",
+    "subtitle": "Evinizdeki her türlü tesisat ve yapı malzemesi ihtiyacınız için uzman kadromuzla yanınızdayız. Yılların tecrübesiyle, kaliteli malzemeleri usta işçilikle buluşturuyoruz."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "areas": "Bölgeler",
+    "contact": "İletişim",
+    "callNow": "Hemen Ara",
+    "whatsapp": "WhatsApp"
+  },
+  "features": {
+    "title": "Neden Öz İnan Yapı Malzemeleri?",
+    "speed": {
+      "title": "Hızlı Servis",
+      "desc": "Evinizdeki rutini bozmadan, işleri en kısa sürede, kaliteden ödün vermeden tamamlıyoruz."
+    },
+    "expert": {
+      "title": "Uzman Personel",
+      "desc": "Sertifikalı, tecrübeli ve her türlü tesisat sorununa hakim uzman kadromuzla içiniz rahat olsun."
+    },
+    "emergency": {
+      "title": "7/24 Acil Servis",
+      "desc": "Beklenmedik acil durumlarda, sizi ve evinizi güvende tutmak için 7 gün 24 saat hizmetinizdeyiz."
+    },
+    "warranty": {
+      "title": "1 Yıl Garanti",
+      "desc": "Yaptığımız tüm işlemlere ve kullandığımız malzemelere duyduğumuz güvenle 1 yıl garanti sunuyoruz."
+    }
+  },
+  "intro": {
+    "title": "1995'den Beri Profesyonel Tesisat Çözümleri",
+    "text1": "1995 yılında Davut Usta tarafından kurulan Özinan Yapı Malzemeleri, 30 yılı aşkın süredir uzman tesisat çözümleri sunuyor. Tesisat onarımları ve yenilemelerdeki derin uzmanlığımız, İstanbul'da sayısız evin güvenilir tercihi olmamızı sağladı.",
+    "text2": "Özinan Yapı Malzemeleri olarak, uzun yıllara dayanan tecrübemizi kaliteli tesisat malzemeleri ve modern tekniklerle birleştiriyoruz. Banyo ve mutfak tamiratları, gider açma, komple banyo yenileme ve acil tesisat hizmetleri konularında uzmanız.",
+    "text3": "Davut Usta önderliğindeki uzman tesisatçı ekibimiz, her işin en yüksek standartlarda tamamlanmasını sağlıyor. Basit bir musluk tamirinden komple banyo yenilemesine kadar, kendi malzeme mağazamızdan temin ettiğimiz kaliteli ürünlerle güvenilir çözümler sunuyoruz."
+  },
+  "services": {
+    "title": "Profesyonel Tesisat ve Isıtma Hizmetlerimiz",
+    "subtitle": "Öz İnan Yapı Malzemeleri olarak, İstanbul genelinde geniş bir yelpazede uzman hizmetler sunuyoruz. İhtiyacınız ne olursa olsun, doğru çözümü sağlıyoruz.",
+    "viewAll": "Tüm Hizmetlerimizi Gör",
+    "drainCleaning": "Gider Açma / Tıkanıklık Giderme",
+    "bathroomRepair": "Banyo Tesisatı ve Tamiratı",
+    "kitchenPlumbing": "Mutfak Tesisatı",
+    "emergencyService": "Acil Tesisat Servisi",
+    "boilerService": "Kombi Bakım ve Tamiri",
+    "waterLeak": "Su Kaçağı Tespiti",
+    "underfloorHeating": "Yerden Isıtma Sistemleri"
+  },
+  "areas": {
+    "title": "İstanbul Avrupa Yakası'nda Hizmet Veriyoruz",
+    "text": "Esenler merkez olmak üzere İstanbul Avrupa Yakası'nın tamamında profesyonel tesisat hizmetleri sunuyoruz. Gider açma, banyo tamiri, kombi bakımı, acil tesisat servisi ve daha fazlası için 30 yıllık tecrübeli ekibimizle hızla yanınızdayız.",
+    "callButton": "Hemen Arayın"
+  },
+  "cta": {
+    "badge": "İLETİŞİME GEÇİN",
+    "title": "Acil Tesisat veya Isıtma Çözümüne mi İhtiyacınız Var?",
+    "subtitle": "Öz İnan Yapı Malzemeleri'ni Hemen Arayın",
+    "phone": "+90 532 453 38 02"
+  },
+  "testimonials": {
+    "title": "Müşterilerimiz Ne Diyor?",
+    "subtitle": "Tesisat hizmetlerimizden memnun kalan müşterilerimizin yorumları-nı okuyun",
+    "review1": {
+      "name": "Ahmet Yılmaz",
+      "initial": "AY",
+      "text": "Öz İnan ekibi çok hızlı ve dürüst çalışıyor. Gerekli işi baştan net bir şekilde anlattılar ve çok profesyonelce tamamladılar. Bir sonraki tesisat ihtiyacımızda kesinlikle tekrar arayacağız!"
+    },
+    "review2": {
+      "name": "Sevgi Kaya",
+      "initial": "SK",
+      "text": "Mutfaktaki akan lavabosu için aradım. Hızlıca geldiler, sorunu hemen gittiler ve çok etkili bir çözümdür. Çok makul fiyat ile mükemmel hizmet. Kesinlikle tavsiye ederim!"
+    },
+    "review3": {
+      "name": "Mehmet Demir",
+      "initial": "MD",
+      "text": "Kombi arızası kombi yenilenmesi ve Öz İnan Yapı Malzemeleri sayesinde yeni bir kombi aldık ve her şeyin mükemmel olmasını sağladık. Sonuçtan çok memnun kaldık."
+    },
+    "review4": {
+      "name": "Elif Türk",
+      "initial": "ET",
+      "text": "Diğer firmalardan çözerdikleri birden fazla denedik; hiçbirisi sonuçlanmadı ancak. Öz İnan'dan Davut Usta tek seansta tespit etti ve kalıcı olarak çözdü. İzlenimlerim gerçekten profesyoneller!"
+    },
+    "review5": {
+      "name": "Turgut Usta",
+      "initial": "TU",
+      "text": "Özhan Yapı'da 25 yıllık tecrübe ile tesisat sorunlarını çözüyorlar. Banyo ve mutfak tamiratı, gider açma ve komple banyo yenileme işlerinde kalite ve müşteri memnuniyeti ön planda."
+    },
+    "review6": {
+      "name": "Mahmut Usta",
+      "initial": "MA",
+      "text": "Özhan Yapı'da 20 yıl servis sunacağından emin olabilirsiniz. En son teknoloji ve tecrübeyle işlemlerini yapıyorlar. Kaliteli yaklaşımları sayesinde tesisat ihtiyaçlarımızda kalıcı çözümler sunuyorlar."
+    }
+  },
+  "footer": {
+    "tagline": "Profesyonel, Hızlı ve Güvenilir Tesisat Çözümleri",
+    "contact": "İletişim",
+    "phone": "Telefon",
+    "email": "E-posta",
+    "address": "Adres",
+    "quickLinks": "Hızlı Bağlantılar",
+    "legal": "Yasal",
+    "privacyPolicy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "faq": "S.S.S.",
+    "cookies": "Çerez Politikası",
+    "copyright": "© 2024 Öz İnan Yapı Malzemeleri. Tüm hakları saklıdır.",
+    "addressFull": "Namık Kemal Mah. 10.Sokak No:4/A<br/>Esenler/İstanbul",
+    "workingHours": "Pzt-Cmt: 8.30-20.00"
+  },
+  "form": {
+    "title": "Tesisat Tamiri mi Lazım?",
+    "subtitle": "Aşağıdaki formu doldurun, WhatsApp üzerinden iletişime geçelim",
+    "name": "Ad Soyad",
+    "phone": "Telefon Numarası",
+    "service": "Hizmet Türü",
+    "selectService": "Hizmet Türü Seçin",
+    "message": "Mesajınız (Opsiyonel)",
+    "submit": "WhatsApp ile Gönder",
+    "requiredFields": "Zorunlu alanlar",
+    "success": "Talebiniz için teşekkürler! En kısa sürede sizinle iletişime geçeceğiz.",
+    "services": {
+      "drainCleaning": "Gider Açma / Tıkanıklık Giderme",
+      "bathroomRepair": "Banyo Tesisatı ve Tamiratı",
+      "kitchenPlumbing": "Mutfak Tesisatı",
+      "emergencyService": "Acil Tesisat Servisi",
+      "boilerService": "Kombi Bakım ve Tamiri",
+      "waterLeak": "Su Kaçağı Tespiti",
+      "underfloorHeating": "Yerden Isıtma Sistemleri"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Gizlilik Politikası",
+    "description": "Öz İnan Yapı Malzemeleri gizlilik politikası - Kişisel verilerinizi nasıl topladığımız ve kullandığımız hakkında bilgi",
+    "section1": {
+      "title": "Bilgi Toplama ve Kullanım",
+      "content": "Öz İnan Yapı Malzemeleri olarak, size daha iyi hizmet verebilmek için belirli kişisel bilgilerinizi toplarız. Bu bilgiler arasında adınız, telefon numaranız, e-posta adresiniz ve hizmet talebinizle ilgili detaylar yer alır. Bu bilgileri yalnızca size tesisat hizmeti sağlamak, randevu oluşturmak ve sizinle iletişim kurmak için kullanırız."
+    },
+    "section2": {
+      "title": "Bilgi Güvenliği",
+      "content": "Kişisel bilgilerinizin güvenliği bizim için son derece önemlidir. Verilerinizi yetkisiz erişime, değişikliğe veya ifşaya karşı korumak için uygun güvenlik önlemleri alırız. Bilgileriniz güvenli sunucularda saklanır ve yalnızca yetkili personel tarafından erişilebilir."
+    },
+    "section3": {
+      "title": "Üçüncü Taraf Paylaşımı",
+      "content": "Kişisel bilgilerinizi, açık rızanız olmadan üçüncü taraflarla paylaşmayız, satmayız veya kiralamayız. Bilgileriniz yalnızca hizmet sağlama amacıyla ve yasal gereklilikler doğrultusunda kullanılır."
+    },
+    "section4": {
+      "title": "Çerezler ve İzleme",
+      "content": "Web sitemiz, kullanıcı deneyimini iyileştirmek için çerezler kullanabilir. Çerezler, tarayıcınızda saklanan ve site tercihlerinizi hatırlamamıza yardımcı olan küçük dosyalardır. Tarayıcı ayarlarınızdan çerezleri devre dışı bırakabilirsiniz."
+    },
+    "section5": {
+      "title": "Haklarınız",
+      "content": "KVKK kapsamında kişisel verilerinize erişme, düzeltme veya silme hakkına sahipsiniz. Kişisel verilerinizle ilgili herhangi bir talebiniz için bizimle iletişime geçebilirsiniz."
+    },
+    "lastUpdated": "Son Güncelleme"
+  },
+  "termsOfService": {
+    "title": "Hizmet Koşulları",
+    "description": "Öz İnan Yapı Malzemeleri hizmet koşulları ve kullanım şartları",
+    "section1": {
+      "title": "Hizmet Kapsamı",
+      "content": "Öz İnan Yapı Malzemeleri, İstanbul Avrupa Yakası'nda profesyonel tesisat ve ısıtma hizmetleri sunmaktadır. Hizmetlerimiz arasında gider açma, banyo-mutfak tesisatı, kombi bakımı, su kaçağı tespiti ve acil tesisat servisi bulunmaktadır. Tüm hizmetlerimiz uzman personel tarafından gerçekleştirilir."
+    },
+    "section2": {
+      "title": "Randevu ve İptal Politikası",
+      "content": "Randevular telefon, WhatsApp veya web sitesi üzerinden alınır. Randevunuzu en az 24 saat öncesinden iptal etmeniz gerekmektedir. Geç iptal veya randevuya gelmeme durumunda servis ücreti talep edilebilir. Acil servis çağrıları için önceden randevu gerekmez."
+    },
+    "section3": {
+      "title": "Ücretlendirme ve Ödeme",
+      "content": "Hizmet ücretleri işin kapsamına, kullanılan malzemelere ve süresine göre belirlenir. İşe başlamadan önce tahmini fiyat bilgisi verilir. Ödeme nakit veya havale ile yapılabilir. Tüm işlerimiz için düzenli fatura kesilir. Kullanılan kaliteli malzemeler ve usta işçilik için 1 yıl garanti sunulmaktadır."
+    },
+    "section4": {
+      "title": "Garanti ve Sorumluluklar",
+      "content": "Yaptığımız tüm işlere ve kullandığımız malzemelere 1 yıl garanti verilmektedir. Garanti kapsamı, işçilik hatalarını ve malzeme kusurlarını içerir. Garanti, yanlış kullanım veya üçüncü taraf müdahalelerini kapsamaz. Acil durumlarda müdahale süremiz maksimum 2 saattir."
+    },
+    "section5": {
+      "title": "Değişiklik Hakkı",
+      "content": "Öz İnan Yapı Malzemeleri, hizmet koşullarını önceden haber vermeksizin değiştirme hakkını saklı tutar. Güncel koşullar web sitemizde yayınlanır. Hizmetlerimizi kullanmaya devam ederek güncel koşulları kabul etmiş sayılırsınız."
+    },
+    "lastUpdated": "Son Güncelleme"
+  },
+  "faq": {
+    "title": "Sıkça Sorulan Sorular",
+    "subtitle": "Tesisat hizmetlerimiz hakkında merak ettikleriniz",
+    "question1": "Acil durumlarda ne kadar sürede geliyorsunuz?",
+    "answer1": "Acil tesisat durumlarında İstanbul Avrupa Yakası'nda maksimum 2 saat içinde adresinize ulaşıyoruz. Esenler, Bayrampaşa, Güngören ve çevre ilçelerde daha kısa sürede müdahale edebiliyoruz.",
+    "question2": "Hangi bölgelerde hizmet veriyorsunuz?",
+    "answer2": "İstanbul Avrupa Yakası'nın tamamında hizmet veriyoruz. Ana hizmet bölgelerimiz: Esenler, Bayrampaşa, Bağcılar, Güngören, Merter, Gaziosmanpaşa ve çevre ilçeler.",
+    "question3": "İşlerinize garanti veriyor musunuz?",
+    "answer3": "Evet, yaptığımız tüm işlere ve kullandığımız malzemelere 1 yıl garanti veriyoruz. Garanti kapsamı işçilik hatalarını ve malzeme kusurlarını içerir.",
+    "question4": "Ücretlendirme nasıl yapılıyor?",
+    "answer4": "İşe başlamadan önce keşif yapıp tahmini fiyat bilgisi veriyoruz. Ücretler işin kapsamına, kullanılan malzemelere ve süresine göre belirlenir. Şeffaf fiyatlandırma politikamız vardır ve sürpriz ücret talep etmeyiz.",
+    "question5": "Randevu almam gerekiyor mu?",
+    "answer5": "Normal hizmetler için randevu almanızı öneririz. Ancak acil durumlarda randevu gerekmeksizin hemen müdahale ediyoruz. Randevu için bizi 0532 453 38 02 numaralı telefondan arayabilir veya WhatsApp ile iletişime geçebilirsiniz.",
+    "question6": "Hangi ödeme yöntemlerini kabul ediyorsunuz?",
+    "answer6": "Nakit ve havale ile ödeme kabul ediyoruz. Tüm işlerimiz için düzenli fatura kesiyoruz.",
+    "question7": "Malzemeleri siz mi temin ediyorsunuz?",
+    "answer7": "Evet, kendi malzeme mağazamız olduğu için tüm tesisat malzemelerini biz temin ediyoruz. Sadece kaliteli ve garantili ürünler kullanıyoruz.",
+    "question8": "Hafta sonu da hizmet veriyor musunuz?",
+    "answer8": "Evet, hafta içi ve hafta sonu hizmet veriyoruz. Acil durumlar için 7/24 ulaşılabiliyiz. Çalışma saatlerimiz: Pazartesi-Cumartesi 08:30-20:00.",
+    "contactTitle": "Sorunuz yanıt bulamadınız mı?",
+    "contactText": "Bize ulaşın, size yardımcı olmaktan memnuniyet duyarız.",
+    "contactButton": "Hemen Arayın"
+  },
+  "cookiePolicy": {
+    "title": "Çerez Politikası",
+    "description": "Öz İnan Yapı Malzemeleri çerez kullanım politikası",
+    "section1": {
+      "title": "Çerezler Nedir?",
+      "content": "Çerezler, web sitemizi ziyaret ettiğinizde cihazınıza kaydedilen küçük metin dosyalarıdır. Bu dosyalar, site deneyiminizi iyileştirmek ve tercihlerinizi hatırlamak için kullanılır. Çerezler, web sitemizin daha iyi çalışmasını sağlar ve hangi sayfaların en çok ziyaret edildiğini anlamamıza yardımcı olur."
+    },
+    "section2": {
+      "title": "Hangi Çerezleri Kullanıyoruz?",
+      "content": "Web sitemizde zorunlu çerezler ve analitik çerezler kullanıyoruz. Zorunlu çerezler, sitenin temel işlevlerinin çalışması için gereklidir. Analitik çerezler ise site kullanımını anlamamıza ve iyileştirmeler yapmamıza yardımcı olur. Üçüncü taraf çerezler (örneğin Google Analytics) kullanabilmekteyiz."
+    },
+    "section3": {
+      "title": "Çerezleri Nasıl Kontrol Edebilirsiniz?",
+      "content": "Tarayıcı ayarlarınızdan çerezleri dilediğiniz zaman silebilir veya engelleyebilirsiniz. Ancak çerezleri devre dışı bırakmanız, web sitemizin bazı özelliklerinin çalışmamasına neden olabilir. Çoğu tarayıcı, çerezleri otomatik olarak kabul edecek şekilde ayarlanmıştır."
+    },
+    "section4": {
+      "title": "Çerez Politikası Değişiklikleri",
+      "content": "Bu çerez politikasını zaman zaman güncelleyebiliriz. Değişiklikler bu sayfada yayınlanacaktır. Web sitemizi kullanmaya devam ederek güncellenmiş çerez politikasını kabul etmiş sayılırsınız."
+    },
+    "lastUpdated": "Son Güncelleme"
+  }
+}

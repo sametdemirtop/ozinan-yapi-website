@@ -1,0 +1,227 @@
+{
+  "hero": {
+    "title": "Professional, Fast and Reliable Plumbing Solutions",
+    "subtitle": "We are here for all your plumbing and building materials needs with our expert team. We combine quality materials with master craftsmanship with years of experience."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "areas": "Service Areas",
+    "contact": "Contact",
+    "callNow": "Call Now"
+  },
+  "features": {
+    "title": "Why Choose Öz İnan Yapı Malzemeleri?",
+    "speed": {
+      "title": "Fast Service",
+      "desc": "We complete jobs in the shortest time without compromising quality, without disrupting your home routine."
+    },
+    "expert": {
+      "title": "Expert Personnel",
+      "desc": "Rest assured with our certified, experienced team of experts who master all types of plumbing problems."
+    },
+    "emergency": {
+      "title": "24/7 Emergency Service",
+      "desc": "We are at your service 24/7 to keep you and your home safe in unexpected emergencies."
+    },
+    "warranty": {
+      "title": "1 Year Warranty",
+      "desc": "We offer a 1-year warranty with confidence in all our work and the materials we use."
+    }
+  },
+  "intro": {
+    "title": "Professional Plumbing Solutions Since 1995",
+    "text1": "Founded in 1995 by Master Davut, Özinan Yapı Malzemeleri has been providing expert plumbing solutions for over 30 years. Our deep expertise in plumbing repairs and renovations has made us the trusted choice for countless homes in Istanbul.",
+    "text2": "As Özinan Yapı Malzemeleri, we combine our years of experience with quality plumbing materials and modern techniques. We are experts in bathroom and kitchen repairs, drain cleaning, complete bathroom renovation and emergency plumbing services.",
+    "text3": "Our expert plumber team led by Master Davut ensures that every job is completed to the highest standards. From a simple faucet repair to a complete bathroom renovation, we offer reliable solutions with quality products sourced from our own materials store."
+  },
+  "services": {
+    "title": "Professional Plumbing and Heating Services",
+    "subtitle": "As Öz İnan Yapı Malzemeleri, we offer expert services in a wide range throughout Istanbul. Whatever your need, we provide the right solution.",
+    "viewAll": "View All Our Services",
+    "drainCleaning": "Drain Cleaning / Unclogging",
+    "bathroomRepair": "Bathroom Plumbing and Repair",
+    "kitchenPlumbing": "Kitchen Plumbing",
+    "emergencyService": "Emergency Plumbing Service",
+    "boilerService": "Boiler Maintenance and Repair",
+    "waterLeak": "Water Leak Detection",
+    "underfloorHeating": "Underfloor Heating Systems"
+  },
+  "areas": {
+    "title": "We Serve Istanbul European Side",
+    "text": "Based in Esenler, we provide professional plumbing services throughout the European Side of Istanbul. Drain cleaning, bathroom repair, boiler maintenance, emergency plumbing and more - we're quickly at your service with our 30 years experienced team.",
+    "callButton": "Call Now"
+  },
+  "cta": {
+    "badge": "GET IN TOUCH",
+    "title": "Need Emergency Plumbing or Heating Solution?",
+    "subtitle": "Call Öz İnan Yapı Malzemeleri Now",
+    "phone": "+90 532 453 38 02"
+  },
+  "testimonials": {
+    "title": "What Our Customers Say?",
+    "subtitle": "Read reviews from our satisfied customers about our plumbing services",
+    "review1": {
+      "name": "Ahmet Yılmaz",
+      "initial": "AY",
+      "text": "Öz İnan team works very fast and honest. They clearly explained the necessary work from the beginning and completed it very professionally. We will definitely call them again for our next plumbing need!"
+    },
+    "review2": {
+      "name": "Sevgi Kaya",
+      "initial": "SK",
+      "text": "I called for a leaking kitchen sink. They came quickly, fixed the problem immediately and very effectively. Excellent service at a very reasonable price. Definitely recommend!"
+    },
+    "review3": {
+      "name": "Mehmet Demir",
+      "initial": "MD",
+      "text": "We had a boiler breakdown and thanks to Öz İnan Yapı Malzemeleri, we got a new boiler and they made sure everything worked perfectly. We are very satisfied with the result."
+    },
+    "review4": {
+      "name": "Elif Türk",
+      "initial": "ET",
+      "text": "We tried multiple other companies; none could solve it. Master Davut from Öz İnan identified and permanently fixed it in one session. Truly professional!"
+    },
+    "review5": {
+      "name": "Turgut Usta",
+      "initial": "TU",
+      "text": "With 25 years of experience at Özhan Yapı, they solve plumbing problems. In bathroom and kitchen repairs, drain cleaning and complete bathroom renovation, quality and customer satisfaction come first."
+    },
+    "review6": {
+      "name": "Mahmut Usta",
+      "initial": "MA",
+      "text": "You can be sure of 20 years of service at Özhan Yapı. They do their work with the latest technology and experience. Thanks to their quality approach, they offer permanent solutions to our plumbing needs."
+    }
+  },
+  "footer": {
+    "tagline": "Professional, Fast and Reliable Plumbing Solutions",
+    "contact": "Contact",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "privacyPolicy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "faq": "FAQ",
+    "cookies": "Cookie Policy",
+    "copyright": "© 2024 Öz İnan Yapı Malzemeleri. All rights reserved.",
+    "addressFull": "Namık Kemal Mah. 10.Sokak No:4/A<br/>Esenler/Istanbul",
+    "workingHours": "Mon-Sat: 8.30-20.00"
+  },
+  "form": {
+    "title": "Need a Plumbing Fix?",
+    "subtitle": "Fill out the form below, we'll contact you via WhatsApp",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "service": "Service Type",
+    "selectService": "Select Service Type",
+    "message": "Your Message (Optional)",
+    "submit": "Send via WhatsApp",
+    "requiredFields": "Required fields",
+    "success": "Thank you for your request! We will contact you shortly.",
+    "services": {
+      "drainCleaning": "Drain Cleaning / Unclogging",
+      "bathroomRepair": "Bathroom Plumbing and Repair",
+      "kitchenPlumbing": "Kitchen Plumbing",
+      "emergencyService": "Emergency Plumbing Service",
+      "boilerService": "Boiler Maintenance and Repair",
+      "waterLeak": "Water Leak Detection",
+      "underfloorHeating": "Underfloor Heating Systems"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "description": "Öz İnan Yapı Malzemeleri privacy policy - Information about how we collect and use your personal data",
+    "section1": {
+      "title": "Information Collection and Use",
+      "content": "As Öz İnan Yapı Malzemeleri, we collect certain personal information to provide you with better service. This information includes your name, phone number, email address, and details about your service request. We use this information solely to provide plumbing services, create appointments, and communicate with you."
+    },
+    "section2": {
+      "title": "Information Security",
+      "content": "The security of your personal information is extremely important to us. We take appropriate security measures to protect your data against unauthorized access, modification, or disclosure. Your information is stored on secure servers and is only accessible by authorized personnel."
+    },
+    "section3": {
+      "title": "Third-Party Sharing",
+      "content": "We do not share, sell, or rent your personal information to third parties without your explicit consent. Your information is used solely for service provision and in accordance with legal requirements."
+    },
+    "section4": {
+      "title": "Cookies and Tracking",
+      "content": "Our website may use cookies to improve user experience. Cookies are small files stored in your browser that help us remember your site preferences. You can disable cookies from your browser settings."
+    },
+    "section5": {
+      "title": "Your Rights",
+      "content": "Under GDPR, you have the right to access, correct, or delete your personal data. You can contact us for any requests regarding your personal information."
+    },
+    "lastUpdated": "Last Updated"
+  },
+  "termsOfService": {
+    "title": "Terms of Service",
+    "description": "Öz İnan Yapı Malzemeleri terms of service and conditions of use",
+    "section1": {
+      "title": "Scope of Services",
+      "content": "Öz İnan Yapı Malzemeleri provides professional plumbing and heating services on the European side of Istanbul. Our services include drain cleaning, bathroom-kitchen plumbing, boiler maintenance, water leak detection, and emergency plumbing service. All our services are performed by expert personnel."
+    },
+    "section2": {
+      "title": "Appointment and Cancellation Policy",
+      "content": "Appointments are taken via phone, WhatsApp, or through our website. You must cancel your appointment at least 24 hours in advance. Late cancellations or no-shows may incur a service fee. No advance appointment is required for emergency service calls."
+    },
+    "section3": {
+      "title": "Pricing and Payment",
+      "content": "Service fees are determined based on the scope of work, materials used, and duration. An estimated price is provided before starting the work. Payment can be made in cash or by bank transfer. We issue invoices for all our work. We offer a 1-year warranty on quality materials and craftsmanship."
+    },
+    "section4": {
+      "title": "Warranty and Responsibilities",
+      "content": "We provide a 1-year warranty on all work performed and materials used. Warranty coverage includes workmanship errors and material defects. The warranty does not cover misuse or third-party interventions. In emergency situations, our response time is maximum 2 hours."
+    },
+    "section5": {
+      "title": "Right to Modify",
+      "content": "Öz İnan Yapı Malzemeleri reserves the right to modify the terms of service without prior notice. Current terms are published on our website. By continuing to use our services, you agree to the updated terms."
+    },
+    "lastUpdated": "Last Updated"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Answers to common questions about our plumbing services",
+    "question1": "How quickly do you respond to emergencies?",
+    "answer1": "In emergency plumbing situations, we reach your address on the European side of Istanbul within a maximum of 2 hours. In Esenler, Bayrampaşa, Güngören, and surrounding districts, we can respond even faster.",
+    "question2": "Which areas do you serve?",
+    "answer2": "We serve the entire European side of Istanbul. Our main service areas include: Esenler, Bayrampaşa, Bağcılar, Güngören, Merter, Gaziosmanpaşa, and surrounding districts.",
+    "question3": "Do you provide warranty for your work?",
+    "answer3": "Yes, we provide a 1-year warranty on all work performed and materials used. Warranty coverage includes workmanship errors and material defects.",
+    "question4": "How is pricing determined?",
+    "answer4": "Before starting work, we conduct an inspection and provide an estimated price. Fees are determined based on the scope of work, materials used, and duration. We have a transparent pricing policy and do not charge surprise fees.",
+    "question5": "Do I need to make an appointment?",
+    "answer5": "We recommend making an appointment for regular services. However, in emergencies, we respond immediately without requiring an appointment. You can call us at 0532 453 38 02 or contact us via WhatsApp to make an appointment.",
+    "question6": "What payment methods do you accept?",
+    "answer6": "We accept cash and bank transfer payments. We issue invoices for all our work.",
+    "question7": "Do you provide the materials?",
+    "answer7": "Yes, since we have our own materials store, we provide all plumbing materials. We only use quality and guaranteed products.",
+    "question8": "Do you provide service on weekends?",
+    "answer8": "Yes, we provide service on weekdays and weekends. We are available 24/7 for emergencies. Our working hours: Monday-Saturday 08:30-20:00.",
+    "contactTitle": "Didn't find an answer to your question?",
+    "contactText": "Contact us, we'd be happy to help you.",
+    "contactButton": "Call Now"
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "description": "Öz İnan Yapı Malzemeleri cookie usage policy",
+    "section1": {
+      "title": "What Are Cookies?",
+      "content": "Cookies are small text files saved to your device when you visit our website. These files are used to improve your site experience and remember your preferences. Cookies help our website function better and help us understand which pages are most visited."
+    },
+    "section2": {
+      "title": "Which Cookies Do We Use?",
+      "content": "We use essential cookies and analytics cookies on our website. Essential cookies are necessary for the site's basic functions to work. Analytics cookies help us understand site usage and make improvements. We may use third-party cookies (e.g., Google Analytics)."
+    },
+    "section3": {
+      "title": "How Can You Control Cookies?",
+      "content": "You can delete or block cookies at any time from your browser settings. However, disabling cookies may cause some features of our website to not function properly. Most browsers are set to accept cookies automatically."
+    },
+    "section4": {
+      "title": "Cookie Policy Changes",
+      "content": "We may update this cookie policy from time to time. Changes will be published on this page. By continuing to use our website, you agree to the updated cookie policy."
+    },
+    "lastUpdated": "Last Updated"
+  }
+}

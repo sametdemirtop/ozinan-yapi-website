@@ -1,26 +1,226 @@
 @import "tailwindcss";
 
+/* Öz İnan Yapı - Industrial Heritage Design System */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Primary Colors (Deep Red/Burgundy) */
+  --color-primary: #7a0004;
+  --color-primary-light: #920407;
+  --color-primary-dark: #410001;
+  --color-primary-container: #a11411;
+  
+  /* Secondary Colors (Metallic Gold) */
+  --color-secondary: #7b5800;
+  --color-secondary-light: #f5be4d;
+  --color-secondary-dark: #5d4200;
+  --color-secondary-container: #fec654;
+  
+  /* Neutral Colors (Industrial Tones) */
+  --color-neutral-50: #f8f9fa;
+  --color-neutral-100: #f3f4f5;
+  --color-neutral-200: #e1e3e4;
+  --color-neutral-300: #d9dadb;
+  --color-neutral-500: #8e706c;
+  --color-neutral-700: #5a403d;
+  --color-neutral-900: #191c1d;
+  
+  /* Accent Colors */
+  --color-whatsapp: #25D366;
+  --color-success: #10B981;
+  --color-warning: #fec654;
+  
+  /* Surface & Background */
+  --background: #f8f9fa;
+  --foreground: #191c1d;
+  --surface-container: #edeeef;
+  --outline: #8e706c;
+  --outline-variant: #e3beb9;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  /* Industrial Heritage Color Palette */
+  --color-primary: var(--color-primary);
+  --color-primary-light: var(--color-primary-light);
+  --color-primary-dark: var(--color-primary-dark);
+  --color-primary-container: var(--color-primary-container);
+  
+  --color-secondary: var(--color-secondary);
+  --color-secondary-light: var(--color-secondary-light);
+  --color-secondary-dark: var(--color-secondary-dark);
+  --color-secondary-container: var(--color-secondary-container);
+  
+  --color-neutral-50: var(--color-neutral-50);
+  --color-neutral-100: var(--color-neutral-100);
+  --color-neutral-200: var(--color-neutral-200);
+  --color-neutral-300: var(--color-neutral-300);
+  --color-neutral-500: var(--color-neutral-500);
+  --color-neutral-700: var(--color-neutral-700);
+  --color-neutral-900: var(--color-neutral-900);
+  
+  --color-whatsapp: var(--color-whatsapp);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  
+  --color-surface-container: var(--surface-container);
+  --color-outline: var(--outline);
+  --color-outline-variant: var(--outline-variant);
+  
+  /* Font Variables - Industrial Heritage Typography */
+  --font-heading: var(--font-libre-caslon);
+  --font-body: var(--font-hanken-grotesk);
+  --font-arabic: var(--font-tajawal);
+  
+  /* Spacing System */
+  --spacing-section-desktop: 80px;
+  --spacing-section-mobile: 48px;
+  --spacing-stack-sm: 8px;
+  --spacing-stack-md: 16px;
+  --spacing-stack-lg: 32px;
+  --spacing-gutter: 24px;
+  
+  /* Container */
+  --container-max: 1280px;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), system-ui, -apple-system, sans-serif;
+}
+
+/* RTL Support */
+[dir="rtl"] {
+  direction: rtl;
+}
+
+[dir="rtl"] .rtl-mirror {
+  transform: scaleX(-1);
+}
+
+/* Custom animations */
+@keyframes fly1 {
+  0% { transform: translate(-10vw, 20vh); }
+  100% { transform: translate(110vw, 5vh); }
+}
+
+@keyframes fly2 {
+  0% { transform: translate(-10vw, 35vh); }
+  100% { transform: translate(110vw, 15vh); }
+}
+
+@keyframes fly3 {
+  0% { transform: translate(-10vw, 25vh); }
+  100% { transform: translate(110vw, 25vh); }
+}
+
+@keyframes flap {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.4); }
+}
+
+.animate-fly1 {
+  animation: fly1 30s linear infinite;
+}
+
+.animate-fly2 {
+  animation: fly2 45s linear infinite;
+  animation-delay: -15s;
+}
+
+.animate-fly3 {
+  animation: fly3 35s linear infinite;
+  animation-delay: -5s;
+}
+
+.animate-flap {
+  animation: flap 1.5s ease-in-out infinite;
+}
+
+/* Kuşlar (Gulls) - İstanbul silüetinin ortasından başlar */
+@keyframes fly-gull {
+  0% {
+    transform: translate(50vw, 0) scale(1);
+  }
+  33% {
+    transform: translate(70vw, -30px) scale(1.1);
+  }
+  66% {
+    transform: translate(90vw, 15px) scale(1);
+  }
+  100% {
+    transform: translate(110vw, -20px) scale(1);
+  }
+}
+
+@keyframes fly-gull-reverse {
+  0% {
+    transform: translate(50vw, 0) scale(1) scaleX(-1);
+  }
+  33% {
+    transform: translate(30vw, -35px) scale(1.1) scaleX(-1);
+  }
+  66% {
+    transform: translate(10vw, 20px) scale(1) scaleX(-1);
+  }
+  100% {
+    transform: translate(-10vw, -25px) scale(1) scaleX(-1);
+  }
+}
+
+@keyframes fly-gull-wide {
+  0% {
+    transform: translate(48vw, 5px) scale(1);
+  }
+  25% {
+    transform: translate(30vw, -25px) scale(1.05);
+  }
+  50% {
+    transform: translate(10vw, 10px) scale(1);
+  }
+  75% {
+    transform: translate(-5vw, -15px) scale(1.05);
+  }
+  100% {
+    transform: translate(-15vw, 0) scale(1);
+  }
+}
+
+.gull {
+  position: absolute;
+  opacity: 0.9;
+  filter: drop-shadow(2px 4px 8px rgba(0, 0, 0, 0.25));
+  transition: all 0.3s ease;
+}
+
+.gull:hover {
+  transform: scale(1.2);
+}
+
+.gull-1 {
+  top: 8%;
+  animation: fly-gull 20s linear infinite;
+  animation-delay: 0s;
+}
+
+.gull-2 {
+  top: 18%;
+  animation: fly-gull-reverse 24s linear infinite;
+  animation-delay: 0.5s;
+}
+
+.gull-3 {
+  top: 32%;
+  animation: fly-gull 22s linear infinite;
+  animation-delay: 1s;
+}
+
+.gull-4 {
+  top: 12%;
+  animation: fly-gull-wide 26s linear infinite;
+  animation-delay: 1.5s;
+}
+
+.gull-5 {
+  top: 38%;
+  animation: fly-gull-reverse 28s linear infinite;
+  animation-delay: 2s;
 }

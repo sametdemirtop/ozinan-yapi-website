@@ -38,7 +38,9 @@
     "title": "Professional Plumbing Solutions Since 1995",
     "text1": "Founded in 1995 by Master Davut, Özinan Yapı Malzemeleri has been providing expert plumbing solutions for over 30 years. Our deep expertise in plumbing repairs and renovations has made us the trusted choice for countless homes in Istanbul.",
     "text2": "As Özinan Yapı Malzemeleri, we combine our years of experience with quality plumbing materials and modern techniques. We are experts in bathroom and kitchen repairs, drain cleaning, complete bathroom renovation and emergency plumbing services.",
-    "text3": "Our expert plumber team led by Master Davut ensures that every job is completed to the highest standards. From a simple faucet repair to a complete bathroom renovation, we offer reliable solutions with quality products sourced from our own materials store."
+    "text3": "Our expert plumber team led by Master Davut ensures that every job is completed to the highest standards. From a simple faucet repair to a complete bathroom renovation, we offer reliable solutions with quality products sourced from our own materials store.",
+    "ctaAbout": "Read our story",
+    "ctaServices": "Drain cleaning and other plumbing services"
   },
   "services": {
     "title": "Professional Plumbing and Heating Services",
@@ -48,14 +50,25 @@
     "bathroomRepair": "Bathroom Plumbing and Repair",
     "kitchenPlumbing": "Kitchen Plumbing",
     "emergencyService": "Emergency Plumbing Service",
-    "boilerService": "Boiler Maintenance and Repair",
     "waterLeak": "Water Leak Detection",
-    "underfloorHeating": "Underfloor Heating Systems"
+    "underfloorHeating": "Underfloor Heating Systems",
+    "drainCleaningDesc": "Professional unclogging and cleaning for sinks, toilets, drains and sewers.",
+    "bathroomRepairDesc": "Bathroom plumbing repair and renovation with quality materials and craftsmanship.",
+    "kitchenPlumbingDesc": "Kitchen sink, faucet and plumbing installation / repair solutions.",
+    "emergencyServiceDesc": "Fast response for flooding, burst pipes and emergency plumbing situations.",
+    "waterLeakDesc": "Instrument-assisted leak detection to locate issues with minimal demolition.",
+    "underfloorHeatingDesc": "Installation, inspection and maintenance support for underfloor heating systems.",
+    "linkAreas": "See our service areas",
+    "linkContact": "Contact us"
   },
   "areas": {
     "title": "We Serve Istanbul European Side",
-    "text": "Based in Esenler, we provide professional plumbing services throughout the European Side of Istanbul. Drain cleaning, bathroom repair, boiler maintenance, emergency plumbing and more - we're quickly at your service with our 30 years experienced team.",
-    "callButton": "Call Now"
+    "text": "Based in Esenler, we provide professional plumbing services throughout the European Side of Istanbul. Drain cleaning, bathroom repair, water leak detection, emergency plumbing and more — we're quickly at your service with our 30 years experienced team.",
+    "callButton": "Call Now",
+    "districtsTitle": "Main districts we serve",
+    "districts": "Esenler, Bayrampaşa, Bağcılar, Güngören, Merter, Gaziosmanpaşa",
+    "linkServices": "Explore our plumbing services",
+    "linkContact": "Contact us for a quote"
   },
   "cta": {
     "badge": "GET IN TOUCH",
@@ -129,9 +142,38 @@
       "bathroomRepair": "Bathroom Plumbing and Repair",
       "kitchenPlumbing": "Kitchen Plumbing",
       "emergencyService": "Emergency Plumbing Service",
-      "boilerService": "Boiler Maintenance and Repair",
       "waterLeak": "Water Leak Detection",
       "underfloorHeating": "Underfloor Heating Systems"
+    }
+  },
+  "pages": {
+    "homeLabel": "Home",
+    "about": {
+      "title": "About Us",
+      "metaTitle": "About Us",
+      "metaDescription": "Since 1995 in Esenler: Öz İnan Yapı Malzemeleri — professional plumbing and building materials with over 30 years of experience.",
+      "cta": "Contact us"
+    },
+    "services": {
+      "title": "Our Services",
+      "metaTitle": "Plumbing Services",
+      "metaDescription": "Drain cleaning, bathroom and kitchen plumbing, water leak detection, underfloor heating and emergency plumbing on Istanbul’s European Side."
+    },
+    "areas": {
+      "title": "Service Areas",
+      "metaTitle": "Service Areas",
+      "metaDescription": "Plumbing services in Esenler, Bayrampaşa, Bağcılar, Güngören, Merter, Gaziosmanpaşa and across Istanbul’s European Side."
+    },
+    "contact": {
+      "title": "Contact",
+      "metaTitle": "Contact",
+      "metaDescription": "Contact Öz İnan Yapı Malzemeleri: +90 532 453 38 02, Namık Kemal Mah. 10.Sokak No:4/A Esenler/Istanbul. Quotes and emergency service.",
+      "napTitle": "Contact details",
+      "hoursLabel": "Working hours"
+    },
+    "faq": {
+      "metaTitle": "Frequently Asked Questions",
+      "metaDescription": "FAQ on response times, service areas, warranty, pricing and appointments."
     }
   },
   "privacyPolicy": {

@@ -11,10 +11,10 @@ export default function Footer() {
 
   const quickLinks = [
     { name: tNav('home'), href: '/' },
-    { name: tNav('about'), href: '/#about' },
-    { name: tNav('services'), href: '/#services' },
-    { name: tNav('areas'), href: '/#areas' },
-    { name: tNav('contact'), href: '/#contact' },
+    { name: tNav('about'), href: '/hakkimizda' },
+    { name: tNav('services'), href: '/hizmetler' },
+    { name: tNav('areas'), href: '/bolgeler' },
+    { name: tNav('contact'), href: '/iletisim' },
   ];
 
   const legalLinks = [

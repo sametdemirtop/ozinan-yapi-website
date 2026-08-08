@@ -306,8 +306,7 @@ export async function generateMetadata({
     publisher: 'Öz İnan Yapı Malzemeleri',
     openGraph: {
       type: 'website',
-      locale: locale === 'tr' ? 'tr_TR' : locale === 'en' ? 'en_US' : 'ar_AR',
-      url: `${siteUrl}/${locale}`,
+      locale: locale === 'tr' ? 'tr_TR' : locale === 'en' ? 'en_US' : 'ar_SA',
       siteName: 'Öz İnan Yapı Malzemeleri',
       title: titles[locale as Locale] || titles.tr,
       description: descriptions[locale as Locale] || descriptions.tr,
@@ -326,15 +325,6 @@ export async function generateMetadata({
       description: descriptions[locale as Locale] || descriptions.tr,
       images: [`${siteUrl}/images/og-image.jpg`],
     },
-    alternates: {
-      canonical: `${siteUrl}/${locale}`,
-      languages: {
-        tr: `${siteUrl}/tr`,
-        en: `${siteUrl}/en`,
-        ar: `${siteUrl}/ar`,
-        'x-default': `${siteUrl}/tr`,
-      },
-    },
     robots: {
       index: true,
       follow: true,
@@ -345,9 +335,6 @@ export async function generateMetadata({
         'max-image-preview': 'large',
         'max-snippet': -1,
       },
-    },
-    verification: {
-      google: 'your-google-verification-code', // User should replace with actual code
     },
     manifest: '/manifest.json',
     other: {

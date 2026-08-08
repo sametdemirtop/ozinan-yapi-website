@@ -10,15 +10,14 @@ import Image from 'next/image';
 export default function Header() {
   const t = useTranslations('nav');
   const locale = useLocale();
-  const pathname = usePathname();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navigation = [
     { name: t('home'), href: '/' },
-    { name: t('about'), href: '/#about' },
-    { name: t('services'), href: '/#services' },
-    { name: t('areas'), href: '/#areas' },
-    { name: t('contact'), href: '/#contact' },
+    { name: t('about'), href: '/hakkimizda' },
+    { name: t('services'), href: '/hizmetler' },
+    { name: t('areas'), href: '/bolgeler' },
+    { name: t('contact'), href: '/iletisim' },
   ];
 
   return (

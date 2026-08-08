@@ -39,7 +39,9 @@
     "title": "1995'den Beri Profesyonel Tesisat Çözümleri",
     "text1": "1995 yılında Davut Usta tarafından kurulan Özinan Yapı Malzemeleri, 30 yılı aşkın süredir uzman tesisat çözümleri sunuyor. Tesisat onarımları ve yenilemelerdeki derin uzmanlığımız, İstanbul'da sayısız evin güvenilir tercihi olmamızı sağladı.",
     "text2": "Özinan Yapı Malzemeleri olarak, uzun yıllara dayanan tecrübemizi kaliteli tesisat malzemeleri ve modern tekniklerle birleştiriyoruz. Banyo ve mutfak tamiratları, gider açma, komple banyo yenileme ve acil tesisat hizmetleri konularında uzmanız.",
-    "text3": "Davut Usta önderliğindeki uzman tesisatçı ekibimiz, her işin en yüksek standartlarda tamamlanmasını sağlıyor. Basit bir musluk tamirinden komple banyo yenilemesine kadar, kendi malzeme mağazamızdan temin ettiğimiz kaliteli ürünlerle güvenilir çözümler sunuyoruz."
+    "text3": "Davut Usta önderliğindeki uzman tesisatçı ekibimiz, her işin en yüksek standartlarda tamamlanmasını sağlıyor. Basit bir musluk tamirinden komple banyo yenilemesine kadar, kendi malzeme mağazamızdan temin ettiğimiz kaliteli ürünlerle güvenilir çözümler sunuyoruz.",
+    "ctaAbout": "Hikayemizi okuyun",
+    "ctaServices": "Gider açma ve diğer tesisat hizmetleri"
   },
   "services": {
     "title": "Profesyonel Tesisat ve Isıtma Hizmetlerimiz",
@@ -49,14 +51,25 @@
     "bathroomRepair": "Banyo Tesisatı ve Tamiratı",
     "kitchenPlumbing": "Mutfak Tesisatı",
     "emergencyService": "Acil Tesisat Servisi",
-    "boilerService": "Kombi Bakım ve Tamiri",
     "waterLeak": "Su Kaçağı Tespiti",
-    "underfloorHeating": "Yerden Isıtma Sistemleri"
+    "underfloorHeating": "Yerden Isıtma Sistemleri",
+    "drainCleaningDesc": "Lavabo, klozet, gider ve kanalizasyon tıkanıklıklarında profesyonel açma ve temizleme.",
+    "bathroomRepairDesc": "Banyo tesisatı onarımı, yenileme ve kaliteli malzeme ile usta işçilik.",
+    "kitchenPlumbingDesc": "Mutfak lavabo, batarya ve tesisat kurulum / onarım çözümleri.",
+    "emergencyServiceDesc": "Su baskını, patlak boru ve acil tesisat durumlarında hızlı müdahale.",
+    "waterLeakDesc": "Cihazlı su kaçağı tespiti ile gereksiz kırım yapmadan sorun noktası bulma.",
+    "underfloorHeatingDesc": "Yerden ısıtma sistemlerinin kurulumu, kontrolü ve bakım desteği.",
+    "linkAreas": "Hizmet bölgelerimizi görün",
+    "linkContact": "İletişime geçin"
   },
   "areas": {
     "title": "İstanbul Avrupa Yakası'nda Hizmet Veriyoruz",
-    "text": "Esenler merkez olmak üzere İstanbul Avrupa Yakası'nın tamamında profesyonel tesisat hizmetleri sunuyoruz. Gider açma, banyo tamiri, kombi bakımı, acil tesisat servisi ve daha fazlası için 30 yıllık tecrübeli ekibimizle hızla yanınızdayız.",
-    "callButton": "Hemen Arayın"
+    "text": "Esenler merkez olmak üzere İstanbul Avrupa Yakası'nın tamamında profesyonel tesisat hizmetleri sunuyoruz. Gider açma, banyo tamiri, su kaçağı tespiti, acil tesisat servisi ve daha fazlası için 30 yıllık tecrübeli ekibimizle hızla yanınızdayız.",
+    "callButton": "Hemen Arayın",
+    "districtsTitle": "Hizmet verdiğimiz başlıca bölgeler",
+    "districts": "Esenler, Bayrampaşa, Bağcılar, Güngören, Merter, Gaziosmanpaşa",
+    "linkServices": "Tesisat hizmetlerimizi inceleyin",
+    "linkContact": "Teklif almak için iletişime geçin"
   },
   "cta": {
     "badge": "İLETİŞİME GEÇİN",
@@ -130,9 +143,38 @@
       "bathroomRepair": "Banyo Tesisatı ve Tamiratı",
       "kitchenPlumbing": "Mutfak Tesisatı",
       "emergencyService": "Acil Tesisat Servisi",
-      "boilerService": "Kombi Bakım ve Tamiri",
       "waterLeak": "Su Kaçağı Tespiti",
       "underfloorHeating": "Yerden Isıtma Sistemleri"
+    }
+  },
+  "pages": {
+    "homeLabel": "Ana Sayfa",
+    "about": {
+      "title": "Hakkımızda",
+      "metaTitle": "Hakkımızda",
+      "metaDescription": "1995'ten beri Esenler merkezli Öz İnan Yapı Malzemeleri: 30 yılı aşkın tecrübe ile profesyonel tesisat ve yapı malzemesi hizmetleri.",
+      "cta": "Bizimle iletişime geçin"
+    },
+    "services": {
+      "title": "Hizmetlerimiz",
+      "metaTitle": "Tesisat Hizmetleri",
+      "metaDescription": "Gider açma, banyo ve mutfak tesisatı, su kaçağı tespiti, yerden ısıtma ve acil tesisat — İstanbul Avrupa Yakası'nda uzman ekip."
+    },
+    "areas": {
+      "title": "Hizmet Bölgelerimiz",
+      "metaTitle": "Hizmet Bölgeleri",
+      "metaDescription": "Esenler, Bayrampaşa, Bağcılar, Güngören, Merter ve Gaziosmanpaşa başta olmak üzere İstanbul Avrupa Yakası'nda tesisat hizmeti."
+    },
+    "contact": {
+      "title": "İletişim",
+      "metaTitle": "İletişim",
+      "metaDescription": "Öz İnan Yapı Malzemeleri iletişim: +90 532 453 38 02, Namık Kemal Mah. 10.Sokak No:4/A Esenler/İstanbul. Teklif ve acil servis.",
+      "napTitle": "İletişim bilgileri",
+      "hoursLabel": "Çalışma saatleri"
+    },
+    "faq": {
+      "metaTitle": "Sıkça Sorulan Sorular",
+      "metaDescription": "Acil müdahale süresi, hizmet bölgeleri, garanti, ücretlendirme ve randevu hakkında sık sorulan sorular."
     }
   },
   "privacyPolicy": {
@@ -165,7 +207,7 @@
     "description": "Öz İnan Yapı Malzemeleri hizmet koşulları ve kullanım şartları",
     "section1": {
       "title": "Hizmet Kapsamı",
-      "content": "Öz İnan Yapı Malzemeleri, İstanbul Avrupa Yakası'nda profesyonel tesisat ve ısıtma hizmetleri sunmaktadır. Hizmetlerimiz arasında gider açma, banyo-mutfak tesisatı, kombi bakımı, su kaçağı tespiti ve acil tesisat servisi bulunmaktadır. Tüm hizmetlerimiz uzman personel tarafından gerçekleştirilir."
+      "content": "Öz İnan Yapı Malzemeleri, İstanbul Avrupa Yakası'nda profesyonel tesisat ve ısıtma hizmetleri sunmaktadır. Hizmetlerimiz arasında gider açma, banyo-mutfak tesisatı, su kaçağı tespiti, yerden ısıtma ve acil tesisat servisi bulunmaktadır. Tüm hizmetlerimiz uzman personel tarafından gerçekleştirilir."
     },
     "section2": {
       "title": "Randevu ve İptal Politikası",

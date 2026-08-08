@@ -3,7 +3,12 @@
 import { useState, FormEvent } from 'react';
 import { useTranslations } from 'next-intl';
 
-export default function ContactForm() {
+type ContactFormProps = {
+  /** When true, omit outer section chrome (used on /iletisim). */
+  embedded?: boolean;
+};
+
+export default function ContactForm({ embedded = false }: ContactFormProps) {
   const t = useTranslations('form');
   const [formData, setFormData] = useState({
     name: '',
@@ -19,7 +24,7 @@ export default function ContactForm() {
     'emergencyService',
     'waterLeak',
     'underfloorHeating',
-  ];
+  ] as const;
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -52,16 +57,7 @@ Lütfen benimle en kısa sürede iletişime geçin.
     });
   };
 
-  return (
-    <section id="contact" className="py-20 bg-neutral-50">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            {t('title')}
-          </h2>
-          <p className="text-lg text-neutral-600">{t('subtitle')}</p>
-        </div>
-
+  const form = (
         <form
           onSubmit={handleSubmit}
           className="bg-white rounded-2xl shadow-lg p-8 space-y-6"
@@ -149,6 +145,22 @@ Lütfen benimle en kısa sürede iletişime geçin.
             * {t('requiredFields')}
           </p>
         </form>
+  );
+
+  if (embedded) {
+    return form;
+  }
+
+  return (
+    <section id="contact" className="py-20 bg-neutral-50">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+            {t('title')}
+          </h2>
+          <p className="text-lg text-neutral-600">{t('subtitle')}</p>
+        </div>
+        {form}
       </div>
     </section>
   );

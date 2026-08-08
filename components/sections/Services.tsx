@@ -1,8 +1,8 @@
 'use client';
 
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { CheckCircleIcon } from '@heroicons/react/24/solid';
-import Link from 'next/link';
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
 
 const services = [
@@ -12,11 +12,10 @@ const services = [
   'emergencyService',
   'waterLeak',
   'underfloorHeating',
-];
+] as const;
 
 export default function Services() {
   const t = useTranslations('services');
-  const locale = useLocale();
 
   return (
     <section
@@ -37,19 +36,28 @@ export default function Services() {
               {services.map((service) => (
                 <li key={service} className="flex items-center gap-3">
                   <CheckCircleIcon className="w-6 h-6 text-primary flex-shrink-0" />
-                  <span className="text-base text-neutral-900">
+                  <Link
+                    href="/hizmetler"
+                    className="text-base text-neutral-900 hover:text-primary transition-colors"
+                  >
                     {t(service)}
-                  </span>
+                  </Link>
                 </li>
               ))}
             </ul>
 
-            <div className="pt-6">
+            <div className="pt-6 flex flex-wrap gap-4">
               <Link
-                href={`/${locale}#contact`}
+                href="/hizmetler"
                 className="inline-flex items-center justify-center bg-primary text-white px-8 py-4 rounded-lg hover:bg-primary-dark transition-colors font-medium shadow-lg hover:shadow-xl"
               >
                 {t('viewAll')}
+              </Link>
+              <Link
+                href="/bolgeler"
+                className="inline-flex items-center text-primary font-medium hover:underline"
+              >
+                {t('linkAreas')}
               </Link>
             </div>
           </div>

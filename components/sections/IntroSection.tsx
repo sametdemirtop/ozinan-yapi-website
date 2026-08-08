@@ -1,6 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
+import { Link } from '@/i18n/routing';
 
 export default function IntroSection() {
   const t = useTranslations('intro');
@@ -23,6 +24,15 @@ export default function IntroSection() {
           </p>
           <p className="text-base md:text-lg text-neutral-700 leading-relaxed">
             {t('text3')}
+          </p>
+          <p className="text-base md:text-lg text-neutral-700 leading-relaxed">
+            <Link href="/hakkimizda" className="text-primary font-medium hover:underline">
+              {t('ctaAbout')}
+            </Link>
+            {' · '}
+            <Link href="/hizmetler" className="text-primary font-medium hover:underline">
+              {t('ctaServices')}
+            </Link>
           </p>
         </div>
       </div>
